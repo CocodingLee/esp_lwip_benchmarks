@@ -25,7 +25,7 @@ void setup()
 {
   Serial.begin(2000000);//Use fast baud rate in hopes of not blocking too much
   Serial.println();
-  WiFi.softAP("accesspoint",NULL,6);
+  WiFi.softAP("accesspoint",NULL,channel);
 
   if(udp.listen(localUdpPort)) {
       Serial.println("UDP Listening");
